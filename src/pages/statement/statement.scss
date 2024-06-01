@@ -1,0 +1,140 @@
+.statement {
+    display: flex;
+
+    .statementPage {
+        flex: 1;
+
+        .statementContainer {
+            background: #f1f1f1;
+            min-height: calc(100vh - 52px);
+
+            .header {
+                top: 52px;
+                width: 100%;
+                box-shadow: 4px 4px 8px #bebebe;
+                background: white;
+                padding: 10px;
+                text-align: center;
+                position: sticky;
+                z-index: 100;
+
+                h1 {
+                    font-weight: 500;
+                }
+            }
+
+            .card {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 20px 30px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 20px #bebebe;
+                padding: 20px;
+                background: white;
+                z-index: -100;
+
+                .netBalance {
+                    margin-bottom: 10px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+                .advance {
+                    color: green;
+                }
+
+                .pending {
+                    color: red;
+                }
+
+                .right {
+                    display: flex;
+                    align-items: center;
+
+                    .payments {
+                        margin: 0 20px;
+                        color: green;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                    .credits {
+                        margin: 0 20px;
+                        color: red;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                    .vr {
+                        height: 50px;
+                        border-left: 3px solid lightgray;
+                        margin: 0 10px;
+                    }
+                }
+            }
+
+            .adminTransaction {
+                display: flex;
+                flex-direction: column;
+
+                .adminTransactionContainer {
+                    padding: 20px 0;
+                    display: flex;
+                    flex-direction: column;
+
+                    .itemContainer {
+                        display: flex;
+
+                        .item {
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 10px 30px;
+                            width: 40%;
+                            background: #fff;
+                            align-items: center;
+                            padding: 10px 20px;
+                            border-radius: 5px;
+
+                            p {
+                                display: flex;
+                                align-items: center;
+                                font-size: 24px;
+                                font-weight: bold;
+                                align-items: center;
+                                
+                                .customerName{
+                                    font-size: 14px;
+                                    color: black;
+                                    height: 100%;
+                                    margin-bottom: 1px;
+                                }
+                            }
+
+
+                            .transactionDate {
+                                font-size: 11px;
+                            }
+
+                            .credit {
+                                color: red;
+                            }
+
+                            .payment {
+                                color: green;
+                            }
+                        }
+                    }
+
+                    .credit {
+                        justify-content: flex-end;
+                    }
+
+                    .payment {
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}

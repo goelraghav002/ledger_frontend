@@ -1,0 +1,47 @@
+.signup {
+
+    .signupContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            
+            input{
+                width: 250px;
+                margin: 10px;
+                border: 0.5px solid #e6e3e3;
+                outline: none;
+                padding: 8px 16px;
+                border-radius: 2px;
+            }
+
+            .submitBtn{
+                width: 250px;
+                align-items: center;
+                margin: 10px auto;
+                color: white;
+                background: #7451f8;
+                border: none;
+                border-radius: 2px;
+                outline: none;
+                padding: 5px 10px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            .link{
+                margin: 10px auto;
+                cursor: pointer;
+            }
+        }
+    }
+}

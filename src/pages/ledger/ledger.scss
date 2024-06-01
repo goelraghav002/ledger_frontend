@@ -1,0 +1,64 @@
+.ledger {
+    display: flex;
+
+    .ledgerPage {
+        flex: 5;
+
+        .ledgerContainer {
+            display: flex;
+            
+            .customersContainer {
+                height: calc(100vh - 52px);
+                overflow-y: scroll;
+                position: relative;
+                flex: 2;
+
+                .addCustomerBtn {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    margin: 40px 20px;
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 8px 15px;
+                        border: none;
+                        outline: none;
+                        background: #6439ff;
+                        color: #fff;
+                        font-size: 16px;
+                        border-radius: 100px;
+                        cursor: pointer;
+                    }
+                }
+
+                .empty {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 50px;
+                }
+            }
+
+            .customerTransaction {
+                flex: 5;
+                height: calc(100vh - 52px);
+                overflow-y: scroll;
+
+                .customerBar {
+                    height: 55px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 40px;
+                    justify-content: space-between;
+
+                    .customerDetails {
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}

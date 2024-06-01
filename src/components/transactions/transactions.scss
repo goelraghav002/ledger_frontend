@@ -1,0 +1,124 @@
+.transactionContainer {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #efefef;
+    height: calc(100vh - 197px);
+    overflow-y: scroll;
+
+    .itemContainer {
+        display: flex;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 15px;
+            width: 35%;
+            align-items: center;
+            background: #fff;
+            border-radius: 5px;
+            
+            .transactionDetails {
+                padding: 12px 25px;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                align-items: center;
+
+
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                .transactionDate {
+                    font-size: 10px;
+                }
+
+                .credit {
+                    color: red;
+                }
+
+                .payment {
+                    color: green;
+                }
+            }
+
+            .note{
+                padding: 6px 15px;
+                border-top: 0.5px solid #efefef;
+                width: 100%;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .credit {
+        justify-content: flex-end;
+    }
+
+    .payment {
+        justify-content: flex-start;
+    }
+}
+
+.transactionFooter {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+
+    .balanceInfo {
+
+        p {
+            font-size: 10px;
+            color: rgb(128, 128, 128);
+            font-weight: bold;
+        }
+
+        .advance {
+            color: green;
+        }
+
+        .due {
+            color: red;
+        }
+    }
+
+    .transactionButtons {
+
+        .transactionButton {
+            padding: 8px 15px;
+            margin: 0 15px;
+            border-radius: 25px;
+            background: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .payment {
+            color: green;
+            border: 2px solid green;
+
+            &:hover {
+                background: green;
+                color: white;
+                cursor: pointer;
+                transition: ease-in 0.2s;
+            }
+        }
+
+        .credit {
+            color: red;
+            border: 2px solid red;
+
+            &:hover {
+                background: red;
+                color: white;
+                cursor: pointer;
+                transition: ease-in 0.2s;
+            }
+        }
+    }
+}

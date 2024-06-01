@@ -1,0 +1,22 @@
+.users {
+    display: flex;
+
+    .usersContainer {
+        flex: 5;
+
+        .userContainer {
+            justify-content: center;
+            flex-wrap: wrap;
+            display: flex;
+
+            .user {
+                margin: 10px;
+                padding: 10px 20px;
+                min-width: 300px;
+                max-width: 360px;
+                border-radius: 5px;
+                border: 2px solid #e6e3e3;
+            }
+        }
+    }
+}
