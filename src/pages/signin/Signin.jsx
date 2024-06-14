@@ -35,7 +35,8 @@ const Signin = () => {
 		<div className='signin'>
 			<Navbar />
 			<div className='signinContainer'>
-				<h1>Welcome to Logo, please Signin to continue...</h1>
+				<h1>Welcome to ledger, please Signin to continue...</h1>
+				<p>Turn on desktop site for better experience</p>
 			</div>
 			<div className='formContainer'>
 				<form onSubmit={userLogin}>

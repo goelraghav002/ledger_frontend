@@ -46,7 +46,7 @@ const Signup = () => {
 		<div className='signup'>
 			<Navbar />
 			<div className='signupContainer'>
-				<h1>Welcome to Logo, please Signup to continue...</h1>
+				<h1>Welcome to ledger, please Signup to continue...</h1>
 			</div>
 			<div className='formContainer'>
 				<form onSubmit={handleUserSignup}>
