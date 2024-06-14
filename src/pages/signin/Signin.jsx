@@ -50,14 +50,14 @@ const Signin = () => {
 						type='email'
 						autoComplete='false'
 						value={email}
-						placeholder='Email'
+						placeholder='Email or raghav@gmail.com'
 						onChange={(e) => setEmail(e.target.value)}
 					/>
 					<input
 						type='password'
 						autoComplete='false'
 						value={password}
-						placeholder='Password'
+						placeholder='Password or 123456'
 						onChange={(e) => setPassword(e.target.value)}
 					/>
 					<button type='submit' className='submitBtn'>
