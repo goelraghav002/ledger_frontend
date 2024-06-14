@@ -12,10 +12,12 @@ const Home = () => {
 
 	return (
 		<div className='home'>
-            {activeMenu && <Sidebar />}
+			{activeMenu && <Sidebar />}
 			<div className='homeContainer'>
-                <Navbar />
-				
+				<Navbar />
+				<div>
+					Page under development. Please navigate to ledger.
+				</div>
 			</div>
 		</div>
 	);
